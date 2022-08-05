@@ -1,24 +1,77 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Restaurant</title>
+    <title>Restaurant Cart</title>
     <link rel="stylesheet" href="./dist/output.css">
 </head>
-<body>
-    <nav>
-
+<body class="flex justify-center p-6 items-center bg-[#ECE9E6]">
+  <main class="w-full rounded-lg bg-white">
+    <!-- nav awal -->
+    <nav class="flex justify-between items-center p-6">
+      <div class="flex justify-center flex-col text-center items-center">
+        <img src="https://cdn-icons-png.flaticon.com/512/948/948036.png" alt="logo" class="w-8 h-8">
+        <h1 class="text-lg font-bold text-gray-800 sm:text-2xl">Restaurant Cart</h1>
+      </div>
+      <div class="flex items-center">
+        <p class="text-gray-800 mr-4">Hello, <span id="user" class="text-gray-800 font-bold">Ali!</span></p>
+        </button>
+      </div>
     </nav>
+    <!-- nav akhir -->
+    <!-- content awal -->
+    <section class="p-6">
+      <div class="cards justify-center flex flex-wrap gap-4">
 
-    <main>
+      </div>
+    </section>
 
-    </main>
+    <!-- cart -->
+    <section class="overflow-x-auto relative p-6" id="cart">
+      <table>
+        <thead>
+          <tr>
+            <th class="th-col">
+              Product
+            </th>
+            <th class="th-col">
+              Price
+            </th>
+            <th class="th-col">
+              Quantity
+            </th>
+            <th class="th-col">
+              Total
+            </th>
 
-    <footer>
-        
-    </footer>
-    <script src="./node_modules/flowbite/dist/flowbite.js"></script>
+            <th class="th-col">
+              Action
+            </th>
+          </tr>
+        </thead>
+        <tbody class="table-cart">
+          
+        </tbody>
+      </table>
+      <div class="between">
+          <h1 class="text-pay">Total</h1>
+          <h1 id="total" class="text-pay"></h1>
+        </div>
+      </div>
+      
+      <!-- button buy -->
+      <div class="flex justify-between items-center p-6">
+        <!-- update button -->
+        <button class="btn-update">Update</button>
+        <button class="btn-green">
+          Buy
+        </button>
+      </div>
+    </section>
+  </main>
+  <script src="./node_modules/flowbite/dist/flowbite.js"></script>
+  <script src="./script.js"></script>
 </body>
 </html>

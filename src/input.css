@@ -1,3 +1,79 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* tailwind custom */
+
+@layer components {
+    .card-title {
+        @apply text-xl ml-1 font-bold tracking-tight text-gray-900;
+    }
+
+    .card-price {
+        @apply text-3xl font-bold text-gray-900;
+    }
+
+    .btn {
+        @apply text-white bg-slate-500 font-medium px-5 py-2.5 text-sm rounded-lg text-center hover:bg-slate-800 focus:ring-4 focus:outline-none focus:ring-slate-300 transition-all duration-300 ease-in-out;
+    }
+
+    .btn-update {
+        @apply bg-gray-500 text-white font-medium px-5 py-2.5 text-sm rounded-lg text-center hover:bg-gray-600 focus:ring-4 focus:outline-none focus:ring-gray-300 transition-all duration-300 ease-in-out;
+    }
+
+    .card {
+        @apply max-w-sm bg-white rounded-lg shadow-md overflow-hidden flex flex-col justify-between;
+    }
+
+    .card-img {
+        @apply p-6 rounded-t-lg items-center flex justify-center h-full
+    }
+
+    .btn-red {
+        @apply bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-lg
+    }
+
+    .btn-green {
+        @apply bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-8 rounded-lg
+    }
+
+    .text-pay {
+        @apply text-lg font-bold text-gray-800 sm:text-2xl
+    }
+
+    .between {
+        @apply flex justify-between items-center p-6
+    }
+
+    .inputNum {
+        @apply w-full h-full border border-gray-400 rounded-lg px-2 py-2 grow-0
+    }
+}
+
+@layer utilities {
+    table {
+        @apply w-full text-sm text-left text-gray-500
+    }
+
+    thead {
+        @apply text-xs text-gray-700 uppercase bg-gray-50
+    }
+
+    td {
+        @apply py-4 px-6
+    }
+
+    .th-col {
+        @apply py-3 px-6 text-center
+    }
+
+    .th-row {
+        @apply py-4 px-6 font-medium text-gray-900 whitespace-nowrap flex justify-center text-center items-center
+    }
+
+    .tr-body {
+        @apply bg-white border-b 
+    }
+
+
+}
